@@ -1,0 +1,232 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Lora%7cRokkitt%7cBahiana', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.4.0/css/flag-icon.min.css')
+    link(rel='stylesheet', href='./index.css')
+    title Blog Javascrupt
+  body
+    // HEADER Y NAV PRINCIPAL > XS
+    .container-fluid.main-header
+      .row.align-items-center
+        .col-6.offset-2.offset-sm-0.col-sm-4.col-lg-4.offset-lg-2
+          h1.main-title Javascrupt
+        .col-sm-8.col-lg-4.hidden-xs-down
+          ul.nav.justify-content-center
+            li.nav-item
+              a.nav-link.active(href='index.html') Home
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false') Tutoriales JS
+              .dropdown-menu.main-header.secondary-font
+                a.dropdown-item(href='') Javascript ES6
+                a.dropdown-item(href='') Node.js
+                a.dropdown-item(href='') React.js
+                a.dropdown-item(href='') MongoDB
+                .dropdown-divider
+                a.dropdown-item(href='') General
+            li.nav-item
+              a.nav-link(data-toggle='modal', data-target='#contact', href='#') Contacto
+              #contact.modal.fade(tabindex='-1', role='dialog', aria-labelledby='contact', aria-hidden='true')
+                .modal-dialog(role='document')
+                  .modal-content
+                    .modal-header
+                      h5#title-label.modal-title Siéntete libre de contactar
+                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    .modal-body
+                      form
+                        .form-group
+                          label.form-control-label(for='recipient-name') Tu email para responderte:  
+                          input#recipient-name.form-control(type='text')
+                        .form-group
+                          label.form-control-label(for='message-text') ¿Qué te gustaría saber?
+                          textarea#message-text.form-control
+                    .modal-footer
+                      button.btn.btn-secondary(type='button', data-dismiss='modal') Cerrar
+                      button.btn.btn-primary(type='button') Enviar mensaje
+        // FIN HEADER Y NAV > XS
+        // HEADER Y NAV XS
+        .col-2.hidden-sm-up
+          button.btn.btn-outline-danger.active(data-toggle='collapse', type='button', data-target='#nav-xs', aria-expanded='false', aria-controls='nav-xs')
+            i.fa.fa.fa-bars(aria-hidden='true')
+    .container-fluid.hidden-sm-up
+      #nav-xs.collapse.main-header.row.align-items-center
+        ul.nav.flex-column.text-center
+          li.nav-item
+            a.nav-link.active(href='index.html') Home
+          li.nav-item
+            a.nav-link(data-toggle='collapse', href='#nav-responsive', aria-expanded='false', aria-controls='collapseExample')
+              | Tutoriales JS 
+              i.fa.fa-arrow-down(aria-hidden='true')
+            #nav-responsive.collapse
+              .container.hidden-sm-up
+                ul.nav.flex-column.text-center.secondary-font
+                  li.nav-item
+                    a(href='') Javascript ES6
+                  .dropdown-divider
+                  li.nav-item
+                    a(href='') Node.js
+                  li.nav-item
+                    a(href='') React.js
+                  li.nav-item
+                    a(href='') MongoDB
+                  .dropdown-divider
+                  li.nav-item
+                    a(href='') General
+          li.nav-item
+            a.nav-link(data-toggle='modal', data-target='#contact2', href='#') Contacto
+          #contact2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='contact', aria-hidden='true')
+            .modal-dialog(role='document')
+              .modal-content
+                .modal-header
+                  h5#exampleModal.modal-title Siéntete libre de contactar
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                  form
+                    .form-group
+                      label.form-control-label(for='recipient-name') Tu email para responderte:  
+                      input#recipient.form-control(type='text')
+                    .form-group
+                      label.form-control-label(for='message-text') ¿Qué te gustaría saber?
+                      textarea#message.form-control
+                .modal-footer
+                  button.btn.btn-secondary(type='button', data-dismiss='modal') Cerrar
+                  button.btn.btn-primary(type='button') Enviar mensaje
+    // FIN HEADER Y NAV XS
+    .col-12.text-center
+      .btn-group
+        button.btn.btn-warning.secondary-font(type='button') Idioma del blog
+        button.btn.btn-warning.disabled.dropdown-toggle.dropdown-toggle-split(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          span.sr-only Idioma blog
+        .dropdown-menu.text-center
+          button.btn.btn-outline-primary.btn-sm
+            span.flag-icon.flag-icon-es
+          .dropdown-divider
+          button.btn.btn-outline-primary.btn-sm
+            span.flag-icon.flag-icon-us
+    // BLOG CONTENT ARTICLES AND PAGINATION
+    section.main-content
+      .container-fluid
+        .row
+          #post-wrapper.col-12.col-sm-8.col-md-8.col-lg-8
+            article.main-article-content
+              h2.secondary-font.text-center Titulo del articulo
+              header.secondary-font.article-header.text-center
+                ul.text-center
+                  li
+                    i.fa.fa-calendar(aria-hidden='true')
+                    |  25-06-2017 ~ 20:48
+                  li
+                    | Por: 
+                    span.secondary-color Daniel Romero
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt molestiae placeat, ab recusandae a eaque, illo pariatur dignissimos tenetur ea, doloribus! Sequi eligendi maiores eveniet exercitationem, nesciunt tenetur repellendus excepturi. Lorem
+                | ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem non quis eius odit reiciendis quos, possimus nulla expedita, error neque molestias, cum provident voluptates exercitationem iusto, vitae. Beatae eum, cum. Lorem ipsum dolor sit
+                | amet, consectetur ad btn-smipisicing elit. Dolore suscipit, ab cumque natus ullam quis dignissimos. Praesentium, nulla repellendus officiis unde, asperiores laboriosam quibusdam at consectetur ab, laborum ullam quidem? Lorem ipsum dolor
+                | sit amet, consectetur adipisicing elit. Recusandae labore molestiae, saepe sint, cum ducimus, dolores magnam aut nobis ipsum vero cupiditate laboriosam beatae veritatis mollitia asperiores culpa! Labore, ipsum.
+            .dropdown-divider
+            #social-platforms
+              a.btn-social.btn-icon.btn-facebook(href='#')
+                i.fa.fa-facebook
+                span Facebook
+              a.btn-social.btn-icon.btn-twitter(href='#')
+                i.fa.fa-twitter
+                span Twitter
+              a.btn-social.btn-icon.btn-googleplus(href='#')
+                i.fa.fa-google-plus
+                span Google+
+            nav(aria-label='Page navigation example')
+              ul.pagination.justify-content-center
+                li.page-item
+                  a.page-link(href='#', aria-label='Previous')
+                    span(aria-hidden='true') «
+                    span.sr-only Previous
+                li.page-item.active
+                  a.page-link(href='#') 1
+                li.page-item
+                  a.page-link(href='#') 2
+                li.page-item
+                  a.page-link(href='#') 3
+                li.page-item
+                  a.page-link(href='#', aria-label='Next')
+                    span(aria-hidden='true') »
+                    span.sr-only Next
+          // COLUMN WITH CARD, CATEGORIES, SEARCH BAR
+          .col-12.col-sm-4.right-column
+            .dropdown-divider.hidden-sm-up(target='_blank')
+            .search-zone.text-center
+              form#search(method='get', action='')
+                input(name='search', type='search', size='25', placeholder='Buscar en el blog...')
+            // CARD
+            .card.text-center
+              .card-header.profile-color.secondary-font
+                | Conóceme un poco más
+              .card-block
+                h5.card-title.secondary-font D.Romero
+                img.card-img-top(src='images/profile_image.png', alt='image_profile')
+                p.card-text.secondary-font
+                  | Programador enfocado en tecnologías que rodean el Stack MERN 
+                  em (Mongo, Express, React, NodeJS)
+                  | , apasionado de Javascript y desarrollo de aplicaciones web. Camino a convertirme en FULL STACK
+                button.btn.btn-secondary(type='button', data-toggle='tooltip', data-placement='top', title="Puedes hacerlo arriba en la pestaña, 'Contacto' si quieres consultarme o proponerme algo")
+                  | Contáctame
+              .card-footer.text-muted.profile-color
+                a.github(href='https://github.com/Ranacode')
+                  i.fa.fa-fw.fa-2x.fa-github-alt(aria-hidden='true')
+                a.codepen(href='https://codepen.io/RomeroDeveloper/')
+                  i.fa.fa-fw.fa-2x.fa-codepen(aria-hidden='true')
+            // END CARD
+            .dropdown-divider
+            .categories.text-center
+              h4 Categorias
+              .title-border
+              ul
+                li
+                  a.link-category(href='')
+                    i.fa.fa-fw.fa-tag(aria-hidden='true')
+                    |  category
+                li
+                  a.link-category(href='')
+                    i.fa.fa-fw.fa-tag(aria-hidden='true')
+                    |  category
+                li
+                  a.link-category(href='')
+                    i.fa.fa-fw.fa-tag(aria-hidden='true')
+                    |  category
+                li
+                  a.link-category(href='')
+                    i.fa.fa-fw.fa-tag(aria-hidden='true')
+                    |  category
+              .dropdown-divider
+            .links.text-center
+              h4 Enlaces interesantes
+              .title-border
+              ul
+                li
+                  a(target='_blank', href='http://superherojs.com/') SuperHero.JS
+                li
+                  a(target='_blank', href='https://github.com/mgechev/javascript-algorithms') Javascript algorithms
+                li
+                  a(target='_blank', href='https://reacttraining.com/online/react-fundamentals') React fundamentals
+                li
+                  a(target='_blank', href='https://davidwalsh.name/') David Walsh Blog - Javascript consultant
+                li
+                  a(target='_blank', href='https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4\
+                  ') Build a RESTful API using Node and Express
+    // MAIN FOOTER
+    footer.main-footer
+      .container
+        .row.align-items-center
+          .col-12.text-center
+            p
+              | Visitanos en GitHub 
+              a(href='https://github.com/Ranacode')
+                i.fa.fa-2x.fa-fw.fa-github
+              | | Contribute to Javascrupt
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
+    script(src='./index_bundle.js')
