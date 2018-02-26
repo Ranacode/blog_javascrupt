@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Reboot from 'material-ui/Reboot';
 import Navbar from './Navbar';
+import Footer from './Footer';
+
 const Layout = (props) => {
 	return (
 		<div>
@@ -18,6 +20,7 @@ const Layout = (props) => {
 			<Reboot />
 			<Navbar />
 			{props.children}
+			<Footer />
 		</div>
 	);
 };
