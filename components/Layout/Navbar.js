@@ -29,7 +29,11 @@ class Navbar extends React.Component {
 					<li>Back-End</li>
 					<li>Cursos</li>
 					<li>Sobre mí</li>
-					<li>Contacto</li>
+					<li>
+						<Link href="/contact">
+							<a>Contacto</a>
+						</Link>
+					</li>
 				</ul>
 				<style jsx>{styles}</style>
 			</nav>

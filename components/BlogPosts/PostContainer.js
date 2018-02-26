@@ -34,7 +34,7 @@ const PostContainer = (props) => (
 					background: white;
 					border: 1px solid #dbdbdb;
 					padding: 0.5em;
-					margin: 1em 0 1em 0.5em;
+					margin: 1em 0.5em 1em 0.5em;
 					display: flex;
 				}
 

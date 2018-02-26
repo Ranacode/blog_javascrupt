@@ -23,10 +23,14 @@ class Index extends React.Component {
 				<Layout>
 					<main>
 						<div className="blog-container">
+							<header>
+								<h3>Últimos artículos</h3>
+							</header>
 							{this.props.posts.map((post) => {
 								return <PostContainer key={post.slug} metadata={post} />;
 							})}
 						</div>
+						<section>columna 21</section>
 					</main>
 				</Layout>
 
@@ -39,10 +43,32 @@ class Index extends React.Component {
 						padding: 0;
 						box-sizing: border-box;
 					}
+					header {
+						background: white;
+						border: 1px solid #dbdbdb;
+						border-radius: 10px;
+						padding: 0.4em;
+						width: 100%;
+						font-family: Lusitana, Verdana, sans-serif;
+						width: 25%;
+						margin: 0.5em;
+					}
 
+					header h3 {
+						margin: 0.2em 0;
+						font-size: 25px;
+						width: 100%;
+						text-align: center;
+					}
 					main {
 						display: grid;
 						grid-template-columns: 70% 30%;
+					}
+
+					@media screen and (max-width: 1024px) {
+						main {
+							grid-template-columns: 100%;
+						}
 					}
 				`}</style>
 			</div>
