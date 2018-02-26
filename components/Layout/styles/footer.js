@@ -13,6 +13,9 @@ export default css`
 		flex-wrap: wrap;
 		border: 1px solid #dbdbdb;
 		height: auto;
+		-webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
 	}
 
 	footer > .socialIcons > ul {

@@ -6,11 +6,14 @@ nav {
     color:#323330;
     width:100%;
     height: auto;
-    border-bottom: 3px solid #323330;
+    border-bottom: 1px solid #323330;
     display:flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
 }
 a {
   text-decoration: none;
