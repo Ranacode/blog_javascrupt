@@ -1,31 +1,31 @@
 import PropTypes from 'prop-types';
 import PostContent from './PostContent';
-import styles from './styles/blogpost';
+import PostHeader from './PostHeader';
+import PostFooter from './PostFooter';
 
-const PostContainer = (props) => (
+const PostContainer = ({ metadata }) => (
 	<section className="post">
-		<img width="200" height="150" src={props.metadata.featured_image} alt={props.metadata.title} />
-		<div className="post__header">
-			<div className="post__header--content">
-				<h2>{props.metadata.title}</h2>
-				<span>
-					Escrito por {props.metadata.author.first_name} {props.metadata.author.last_name}
-				</span>
-			</div>
-			<PostContent content={props.metadata.body} />
-			<footer>
-				<strong>
-					Publicado el {new Date(props.metadata.published).toLocaleDateString()} ~{' '}
-					{new Date(props.metadata.published).toLocaleTimeString()}
-				</strong>
-				<div className="tags">
-					{props.metadata.tags.map((tag) => {
-						return <span key={tag.slug}>{tag.name}</span>;
-					})}
-				</div>
-			</footer>
+		<img width="200" height="150" src={metadata.featured_image} alt={metadata.title} />
+		<div className="post__wrapper">
+			<PostHeader title={metadata.title} author={metadata.author} />
+			<PostContent content={metadata.body} />
+			<PostFooter published={metadata.published} tags={metadata.tags} />
 		</div>
-		<style jsx>{styles}</style>
+		<style jsx>{`
+			.post {
+				background: white;
+				border: 1px solid #dbdbdb;
+				padding: 0.5em;
+				margin: 1em 0.5em 1em 0.5em;
+				display: flex;
+			}
+
+			.post__wrapper {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+			}
+		`}</style>
 	</section>
 );
 
