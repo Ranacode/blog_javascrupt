@@ -3,7 +3,7 @@ import css from 'styled-jsx/css';
 export default css`
 	footer {
 		background: #eee;
-		padding: 0.5em;
+		padding: 0em;
 		font-family: Lusitana, Georgia, sans-serif;
 		color: black;
 		width: 100%;
@@ -13,6 +13,10 @@ export default css`
 		flex-wrap: wrap;
 		border: 1px solid #dbdbdb;
 		height: auto;
+		overflow: hidden;
+		-webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
 	}
 
 	footer > .socialIcons > ul {

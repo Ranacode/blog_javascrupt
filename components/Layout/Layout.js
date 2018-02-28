@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Reboot from 'material-ui/Reboot';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -17,7 +16,6 @@ const Layout = (props) => {
 				/>
 				<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" />
 			</Head>
-			<Reboot />
 			<Navbar />
 			{props.children}
 			<Footer />

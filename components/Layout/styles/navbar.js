@@ -6,18 +6,25 @@ nav {
     color:#323330;
     width:100%;
     height: auto;
-    border-bottom: 3px solid #323330;
+    border-bottom: 1px solid #323330;
     display:flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
+     box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.75);
 }
-a {
-  text-decoration: none;
-  color: #323330;
-  cursor:pointer;
-  transition: all 0.4s ease-in;
+
+a:link {
+    text-decoration: none;
 }
+
+a:visited {
+    color:black;
+}
+
+
 .header h1 {
     font-size:40px;
     margin:0 0 0.1em 0;
@@ -40,12 +47,48 @@ li {
    transition: 0.3s ease-in-out;
 }
 
+li.disabled {
+    border: 1px solid gray;
+    cursor: not-allowed;
+    transition:none;
+}
+
+li a {
+  text-decoration: none;
+  color: #323330;
+  cursor:pointer;
+  transition: all 0.4s ease-in;
+}
+
+li.disabled a{
+    pointer-events:none;
+    color: gray;
+    opacity:0.8;
+    font-style: italic;
+    transition:none;
+}
+
+li.disabled:hover {
+    background:none;
+    border-color:gray;
+    transform: none;
+    color: gray;
+}
+
+li.disabled:hover a {
+    cursor: not-allowed;
+    color: gray;
+}
+
 li:hover {
-   cursor: pointer;
-   color: #f5da55;
    background: #323330;
    border-color: #f1d131;
    transform: scale(1.1);
+}
+
+li:hover a {
+    cursor: pointer;
+    color: #f5da55;
 }
 
 .bars-icon {
