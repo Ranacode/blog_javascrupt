@@ -8,7 +8,7 @@ const Layout = (props) => {
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
 				<meta charSet="utf-8" key="utf" />
-				<title>Javascrupt - Lleva tus habilidades de Javascript al siguiente nivel</title>
+				<title>{props.htmlTitle}</title>
 				<link
 					href="https://fonts.googleapis.com/css?family=Raleway|Lusitana"
 					rel="stylesheet"

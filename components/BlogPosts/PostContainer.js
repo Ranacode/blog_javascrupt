@@ -8,7 +8,7 @@ const PostContainer = ({ metadata }) => (
 		<img width="200" height="150" src={metadata.featured_image} alt={metadata.title} />
 		<div className="post__wrapper">
 			<PostHeader title={metadata.title} author={metadata.author} />
-			<PostContent content={metadata.body} />
+			<PostContent content={metadata} />
 			<PostFooter published={metadata.published} tags={metadata.tags} />
 		</div>
 		<style jsx>{`

@@ -15,12 +15,13 @@ const PostFooter = ({ published, tags }) => (
 				text-align: center;
 			}
 			.tags {
+				margin: 0.5em 0;
 				padding: 0.6em;
 			}
 			.tags span {
 				background: #4a4a4a;
 				color: #fff;
-				font-size: 16px;
+				font-size: 14px;
 				padding: .4em;
 				margin-right: .6em;
 				border-radius: 12px;
@@ -31,7 +32,7 @@ const PostFooter = ({ published, tags }) => (
 );
 
 PostFooter.propTypes = {
-	published: PropTypes.Date,
+	published: PropTypes.string,
 	tags: PropTypes.array.isRequired
 };
 

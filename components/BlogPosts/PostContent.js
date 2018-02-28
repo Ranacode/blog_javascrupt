@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const PostContent = ({ content }) => (
 	<div className="article">
-		<article className="article__content">{Parser(content.substring(0, 175))}....</article>
-		<Link href="/post">
+		<article className="article__content">{content.summary}....</article>
+		<Link href={`/post?title=${content.title}`}>
 			<button>
 				<a>Leer más</a>
 			</button>
@@ -28,6 +28,7 @@ const PostContent = ({ content }) => (
 
 				button {
 					align-self: center;
+					margin: 1em 0;
 				}
 			`}
 		</style>
@@ -35,7 +36,7 @@ const PostContent = ({ content }) => (
 );
 
 PostContent.propTypes = {
-	content: PropTypes.string.isRequired
+	content: PropTypes.object.isRequired
 };
 
 export default PostContent;

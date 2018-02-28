@@ -19,7 +19,7 @@ class Index extends React.Component {
 	render() {
 		return (
 			<div>
-				<Layout>
+				<Layout htmlTitle="Javascrupt - Lleva tus habilidades de Javascript al siguiente nivel">
 					<main>
 						<div className="blog-container">
 							<header>
