@@ -1,4 +1,5 @@
 import Parser from 'html-react-parser';
+import PropTypes from 'prop-types';
 
 const PostContent = (props) => {
 	return (
@@ -27,6 +28,10 @@ const PostContent = (props) => {
 			</style>
 		</div>
 	);
+};
+
+PostContent.propTypes = {
+	content: PropTypes.string.isRequired
 };
 
 export default PostContent;

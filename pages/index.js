@@ -10,7 +10,6 @@ class Index extends React.Component {
 		return butter.post
 			.list({ page: 1, page_size: 5 })
 			.then((result) => {
-				console.log(result.data.data);
 				return { posts: result.data.data };
 			})
 			.catch((err) => {
@@ -42,6 +41,10 @@ class Index extends React.Component {
 						margin: 0;
 						padding: 0;
 						box-sizing: border-box;
+					}
+
+					.blog-container {
+						margin: 0.7em 1em;
 					}
 					header {
 						background: white;
