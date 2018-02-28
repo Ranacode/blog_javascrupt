@@ -18,19 +18,7 @@ class Post extends React.Component {
 				console.log(err);
 			});
 	};
-	/*
-	componentDidMount() {
-		butter.post
-			.search(this.props.url.query.title)
-			.then((resp) => {
-				console.dir(resp);
-				this.setState({ post: resp.data.data[0] });
-			})
-			.catch((err) => {
-				console.log(err);
-			});
-	}
-*/
+
 	render() {
 		return (
 			<Layout>
@@ -41,6 +29,11 @@ class Post extends React.Component {
 						content={`${this.props.post.author.first_name} ${this.props.post.author.last_name}`}
 					/>
 					<meta name="keywords" content={this.props.post.tags.map((tag) => tag.name).join(', ')} />
+					<link
+						rel="stylesheet"
+						href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css"
+						key="codeStyles"
+					/>
 					<title>{this.props.post.seo_title}</title>
 				</Head>
 				<header>
