@@ -15,6 +15,7 @@ const Layout = (props) => {
 					key="globalFonts"
 				/>
 				<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" />
+				<script defer src="https://static.mailerlite.com/data/webforms/778608/m9q1i7.js?v1" />
 			</Head>
 			<Navbar />
 			{props.children}

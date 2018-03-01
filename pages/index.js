@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Butter from 'buttercms';
 import Layout from '../components/Layout/Layout';
 import PostContainer from '../components/BlogPostsList/PostContainer';
+import Newsletter from '../components/NewsletterForm/Newsletter';
 
 const butter = Butter('4a55813e1a9f5d6c1b68bc28f6fd710d9f00e595');
 
@@ -29,7 +30,9 @@ class Index extends React.Component {
 								return <PostContainer key={post.slug} metadata={post} />;
 							})}
 						</div>
-						<section>columna 21</section>
+						<section>
+							<Newsletter />
+						</section>
 					</main>
 				</Layout>
 
