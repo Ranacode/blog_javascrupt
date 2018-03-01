@@ -4,7 +4,7 @@ import Butter from 'buttercms';
 import PropTypes from 'prop-types';
 import Parser from 'html-react-parser';
 import Layout from '../components/Layout/Layout';
-
+import HighlightWithStyles from '../components/HightLightWithStyles';
 const butter = Butter('4a55813e1a9f5d6c1b68bc28f6fd710d9f00e595');
 
 class Post extends React.Component {
@@ -40,10 +40,11 @@ class Post extends React.Component {
 					</div>
 				</header>
 				<section>
-					<article>{Parser(this.props.post.body)}</article>
+					<article>
+						<HighlightWithStyles code={this.props.post.body} />
+					</article>
 				</section>
-				<style jsx>
-					{`
+				<style jsx global>{`
 					header {
 						width: 100%;
 						background: rgb(238, 238, 238);
@@ -95,7 +96,7 @@ class Post extends React.Component {
 						}
 					}
 
-					@media screen and (max-width:480px) {
+					@media screen and (max-width: 480px) {
 						.title__container {
 							width: 100%;
 						}
@@ -104,9 +105,7 @@ class Post extends React.Component {
 							width: 95%;
 						}
 					}
-					}
-				`}
-				</style>
+				`}</style>
 			</Layout>
 		);
 	}
