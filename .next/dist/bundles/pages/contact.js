@@ -67,12 +67,12 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/BlogPostsList/PostContainer.js":
+/***/ "./components/Contact/ContactForm.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,310 +80,102 @@ module.exports =
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("prop-types");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PostContent__ = __webpack_require__("./components/BlogPostsList/PostContent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PostHeader__ = __webpack_require__("./components/BlogPostsList/PostHeader.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__PostFooter__ = __webpack_require__("./components/BlogPostsList/PostFooter.js");
-var _jsxFileName = '/home/Ranacode/Documents/code_playground/blog_javascrupt/components/BlogPostsList/PostContainer.js';
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__ = __webpack_require__("./components/Contact/styles/contact.js");
+var _jsxFileName = "/home/Ranacode/Documents/code_playground/blog_javascrupt/components/Contact/ContactForm.js";
 
 
 
 
-
-
-
-var PostContainer = function PostContainer(_ref) {
-	var metadata = _ref.metadata;
+var ContactForm = function ContactForm() {
 	return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-		'section',
+		"div",
 		{
-			className: 'jsx-1327978976' + ' ' + 'post',
+			className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash + " " + "form__container",
 			__source: {
 				fileName: _jsxFileName,
-				lineNumber: 7
+				lineNumber: 4
 			}
 		},
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', { width: '200', height: '150', src: metadata.featured_image, alt: metadata.title, className: 'jsx-1327978976',
-			__source: {
-				fileName: _jsxFileName,
-				lineNumber: 8
-			}
-		}),
 		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			'div',
-			{
-				className: 'jsx-1327978976' + ' ' + 'post__wrapper',
+			"form",
+			{ action: "https://formspree.io/romerodeveloper@techie.com", method: "POST", className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 5
+				}
+			},
+			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+				"label",
+				{
+					className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
+					__source: {
+						fileName: _jsxFileName,
+						lineNumber: 6
+					}
+				},
+				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("input", { required: true, autoFocus: true, name: "email", placeholder: "Tu email para responderte", type: "email", className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
+					__source: {
+						fileName: _jsxFileName,
+						lineNumber: 7
+					}
+				})
+			),
+			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("textarea", {
+				minLength: "10",
+				maxLength: "1000",
+				placeholder: "Dejame tus inquietudes aqu\xED",
+				name: "message",
+				required: true,
+				className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
 				__source: {
 					fileName: _jsxFileName,
 					lineNumber: 9
 				}
-			},
-			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__PostHeader__["a" /* default */], { title: metadata.title, author: metadata.author, __source: {
-					fileName: _jsxFileName,
-					lineNumber: 10
-				}
 			}),
-			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__PostContent__["a" /* default */], { content: metadata, __source: {
-					fileName: _jsxFileName,
-					lineNumber: 11
-				}
-			}),
-			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__PostFooter__["a" /* default */], { published: metadata.published, tags: metadata.tags, __source: {
-					fileName: _jsxFileName,
-					lineNumber: 12
-				}
-			})
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-			styleId: '1327978976',
-			css: '.post.jsx-1327978976{background:white;border:1px solid #dbdbdb;padding:0.5em;margin:1em 0.5em 1em 0.5em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.post__wrapper.jsx-1327978976{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQmxvZ1Bvc3RzTGlzdC9Qb3N0Q29udGFpbmVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWFjLEFBR3NCLEFBUUosaUJBUFkseUJBQ1gsY0FDYSxrQkFNTCxTQUxULHFFQU1OLEtBTFIsNEJBTUEiLCJmaWxlIjoiY29tcG9uZW50cy9CbG9nUG9zdHNMaXN0L1Bvc3RDb250YWluZXIuanMiLCJzb3VyY2VSb290IjoiL2hvbWUvUmFuYWNvZGUvRG9jdW1lbnRzL2NvZGVfcGxheWdyb3VuZC9ibG9nX2phdmFzY3J1cHQiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnO1xuaW1wb3J0IFBvc3RDb250ZW50IGZyb20gJy4vUG9zdENvbnRlbnQnO1xuaW1wb3J0IFBvc3RIZWFkZXIgZnJvbSAnLi9Qb3N0SGVhZGVyJztcbmltcG9ydCBQb3N0Rm9vdGVyIGZyb20gJy4vUG9zdEZvb3Rlcic7XG5cbmNvbnN0IFBvc3RDb250YWluZXIgPSAoeyBtZXRhZGF0YSB9KSA9PiAoXG5cdDxzZWN0aW9uIGNsYXNzTmFtZT1cInBvc3RcIj5cblx0XHQ8aW1nIHdpZHRoPVwiMjAwXCIgaGVpZ2h0PVwiMTUwXCIgc3JjPXttZXRhZGF0YS5mZWF0dXJlZF9pbWFnZX0gYWx0PXttZXRhZGF0YS50aXRsZX0gLz5cblx0XHQ8ZGl2IGNsYXNzTmFtZT1cInBvc3RfX3dyYXBwZXJcIj5cblx0XHRcdDxQb3N0SGVhZGVyIHRpdGxlPXttZXRhZGF0YS50aXRsZX0gYXV0aG9yPXttZXRhZGF0YS5hdXRob3J9IC8+XG5cdFx0XHQ8UG9zdENvbnRlbnQgY29udGVudD17bWV0YWRhdGF9IC8+XG5cdFx0XHQ8UG9zdEZvb3RlciBwdWJsaXNoZWQ9e21ldGFkYXRhLnB1Ymxpc2hlZH0gdGFncz17bWV0YWRhdGEudGFnc30gLz5cblx0XHQ8L2Rpdj5cblx0XHQ8c3R5bGUganN4PntgXG5cdFx0XHQucG9zdCB7XG5cdFx0XHRcdGJhY2tncm91bmQ6IHdoaXRlO1xuXHRcdFx0XHRib3JkZXI6IDFweCBzb2xpZCAjZGJkYmRiO1xuXHRcdFx0XHRwYWRkaW5nOiAwLjVlbTtcblx0XHRcdFx0bWFyZ2luOiAxZW0gMC41ZW0gMWVtIDAuNWVtO1xuXHRcdFx0XHRkaXNwbGF5OiBmbGV4O1xuXHRcdFx0fVxuXG5cdFx0XHQucG9zdF9fd3JhcHBlciB7XG5cdFx0XHRcdGRpc3BsYXk6IGZsZXg7XG5cdFx0XHRcdGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG5cdFx0XHRcdGZsZXg6IDE7XG5cdFx0XHR9XG5cdFx0YH08L3N0eWxlPlxuXHQ8L3NlY3Rpb24+XG4pO1xuXG5Qb3N0Q29udGFpbmVyLnByb3BUeXBlcyA9IHtcblx0bWV0YWRhdGE6IFByb3BUeXBlcy5vYmplY3QuaXNSZXF1aXJlZFxufTtcblxuZXhwb3J0IGRlZmF1bHQgUG9zdENvbnRhaW5lcjtcbiJdfQ== */\n/*@ sourceURL=components/BlogPostsList/PostContainer.js */'
-		})
-	);
-};
-
-PostContainer.propTypes = {
-	metadata: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.object.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (PostContainer);
-
-/***/ }),
-
-/***/ "./components/BlogPostsList/PostContent.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_html_react_parser__ = __webpack_require__("html-react-parser");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_html_react_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_html_react_parser__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__("prop-types");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_link__ = __webpack_require__("next/link");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_next_link__);
-var _jsxFileName = '/home/Ranacode/Documents/code_playground/blog_javascrupt/components/BlogPostsList/PostContent.js';
-
-
-
-
-
-
-var PostContent = function PostContent(_ref) {
-	var content = _ref.content;
-	return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-		'div',
-		{
-			className: 'jsx-2661029397' + ' ' + 'article',
-			__source: {
-				fileName: _jsxFileName,
-				lineNumber: 6
-			}
-		},
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			'article',
-			{
-				className: 'jsx-2661029397' + ' ' + 'article__content',
-				__source: {
-					fileName: _jsxFileName,
-					lineNumber: 7
-				}
-			},
-			content.summary,
-			'....'
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			__WEBPACK_IMPORTED_MODULE_4_next_link___default.a,
-			{ href: '/post?title=' + content.title, __source: {
-					fileName: _jsxFileName,
-					lineNumber: 8
-				}
-			},
 			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-				'button',
-				{
-					className: 'jsx-2661029397',
+				"button",
+				{ type: "submit", className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
 					__source: {
 						fileName: _jsxFileName,
-						lineNumber: 9
+						lineNumber: 16
 					}
 				},
 				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-					'a',
+					"span",
 					{
-						className: 'jsx-2661029397',
+						className: "jsx-" + __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
 						__source: {
 							fileName: _jsxFileName,
-							lineNumber: 10
+							lineNumber: 17
 						}
 					},
-					'Leer m\xE1s'
+					"ENVIAR"
 				)
 			)
 		),
 		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-			styleId: '2661029397',
-			css: '.article.jsx-2661029397{margin:0.6em;padding-bottom:0.4em;border-bottom:1px solid #dbdbdb;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.article__content.jsx-2661029397{text-align:justify;text-justify:inter-word;}button.jsx-2661029397{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin:1em 0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQmxvZ1Bvc3RzTGlzdC9Qb3N0Q29udGVudC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFjSSxBQUdtQixBQVFNLEFBS0QsYUFaRyxNQVFHLGVBUFEsU0FRakMsdUJBUGMsS0FXQSxhQUNkLHdEQVh1Qiw4RUFDdkIiLCJmaWxlIjoiY29tcG9uZW50cy9CbG9nUG9zdHNMaXN0L1Bvc3RDb250ZW50LmpzIiwic291cmNlUm9vdCI6Ii9ob21lL1JhbmFjb2RlL0RvY3VtZW50cy9jb2RlX3BsYXlncm91bmQvYmxvZ19qYXZhc2NydXB0Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFBhcnNlciBmcm9tICdodG1sLXJlYWN0LXBhcnNlcic7XG5pbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnO1xuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcblxuY29uc3QgUG9zdENvbnRlbnQgPSAoeyBjb250ZW50IH0pID0+IChcblx0PGRpdiBjbGFzc05hbWU9XCJhcnRpY2xlXCI+XG5cdFx0PGFydGljbGUgY2xhc3NOYW1lPVwiYXJ0aWNsZV9fY29udGVudFwiPntjb250ZW50LnN1bW1hcnl9Li4uLjwvYXJ0aWNsZT5cblx0XHQ8TGluayBocmVmPXtgL3Bvc3Q/dGl0bGU9JHtjb250ZW50LnRpdGxlfWB9PlxuXHRcdFx0PGJ1dHRvbj5cblx0XHRcdFx0PGE+TGVlciBtw6FzPC9hPlxuXHRcdFx0PC9idXR0b24+XG5cdFx0PC9MaW5rPlxuXG5cdFx0PHN0eWxlIGpzeD5cblx0XHRcdHtgXG5cdFx0XHRcdC5hcnRpY2xlIHtcblx0XHRcdFx0XHRtYXJnaW46IDAuNmVtO1xuXHRcdFx0XHRcdHBhZGRpbmctYm90dG9tOiAwLjRlbTtcblx0XHRcdFx0XHRib3JkZXItYm90dG9tOiAxcHggc29saWQgI2RiZGJkYjtcblx0XHRcdFx0XHRkaXNwbGF5OiBmbGV4O1xuXHRcdFx0XHRcdGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG5cdFx0XHRcdH1cblxuXHRcdFx0XHQuYXJ0aWNsZV9fY29udGVudCB7XG5cdFx0XHRcdFx0dGV4dC1hbGlnbjoganVzdGlmeTtcblx0XHRcdFx0XHR0ZXh0LWp1c3RpZnk6IGludGVyLXdvcmQ7XG5cdFx0XHRcdH1cblxuXHRcdFx0XHRidXR0b24ge1xuXHRcdFx0XHRcdGFsaWduLXNlbGY6IGNlbnRlcjtcblx0XHRcdFx0XHRtYXJnaW46IDFlbSAwO1xuXHRcdFx0XHR9XG5cdFx0XHRgfVxuXHRcdDwvc3R5bGU+XG5cdDwvZGl2PlxuKTtcblxuUG9zdENvbnRlbnQucHJvcFR5cGVzID0ge1xuXHRjb250ZW50OiBQcm9wVHlwZXMub2JqZWN0LmlzUmVxdWlyZWRcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFBvc3RDb250ZW50O1xuIl19 */\n/*@ sourceURL=components/BlogPostsList/PostContent.js */'
+			styleId: __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scopedHash,
+			css: __WEBPACK_IMPORTED_MODULE_2__styles_contact_js__["a" /* default */].__scoped
 		})
 	);
 };
 
-PostContent.propTypes = {
-	content: __WEBPACK_IMPORTED_MODULE_3_prop_types___default.a.object.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (PostContent);
+/* harmony default export */ __webpack_exports__["a"] = (ContactForm);
 
 /***/ }),
 
-/***/ "./components/BlogPostsList/PostFooter.js":
+/***/ "./components/Contact/styles/contact.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("prop-types");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-var _jsxFileName = "/home/Ranacode/Documents/code_playground/blog_javascrupt/components/BlogPostsList/PostFooter.js";
+var _defaultExport = new String('.form__container{margin:1em auto;padding:1em;max-width:600px;background:white;border:1px solid #dbdbdb;box-shadow:0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);font-family:Raleway,Georgia,serif;}.form__container form{padding:1em;height:auto;text-align:center;border:1px solid #dbdbdb;}.form__container input{width:90%;font-size:20px;padding:0.5em;margin:0.5em auto;background:rgba(136,128,127,0.1);border:1px solid rgba(233,54,22,0.5);color:rgba(1,6,7,0.8);-webkit-transition:0.4s ease all;transition:0.4s ease all;}.form__container *:required{-moz-box-shadow:none;box-shadow:none;}.form__container input:invalid{box-shadow:0 0 3px red;}.form__container input:focus,.form__container textarea:focus{padding:0.7em;}.form__container input::-webkit-input-placeholder,.form__container textarea::-webkit-input-placeholder{font-size:20px;padding-left:0.9em;}.form__container input::-moz-placeholder,.form__container textarea::-moz-placeholder{font-size:20px;padding-left:0.9em;}.form__container input:-ms-input-placeholder,.form__container textarea:-ms-input-placeholder{font-size:20px;padding-left:0.9em;}.form__container input::placeholder,.form__container textarea::placeholder{font-size:20px;padding-left:0.9em;}.form__container textarea{margin:0.5em auto;padding:0.5em;width:calc(100% - 45px);height:300px;resize:none;-webkit-transition:0.4s ease all;transition:0.4s ease all;}.form__container button{position:relative;width:100%;display:block;margin:30px auto;padding:0;overflow:hidden;border-width:0;outline:none;border-radius:2px;box-shadow:0 1px 4px rgba(0,0,0,.6);background-color:#2ecc71;color:#ecf0f1;}.form__container button:before{content:"";position:absolute;top:50%;left:50%;display:block;width:0;padding-top:0;border-radius:100%;background-color:rgba(236,240,241,.3);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}.form__container button:active:before{width:120%;padding-top:120%;-webkit-transition:width .2s ease-out,padding-top .2s ease-out;transition:width .2s ease-out,padding-top .2s ease-out;}.form__container button>*{position:relative;}.form__container button:hover,.form__container button:focus{background-color:#27ae60;}.form__container button span{display:block;padding:12px 24px;font-size:24px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQ29udGFjdC9zdHlsZXMvY29udGFjdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFa0IsQUFHbUIsQUFTSixBQU1GLEFBV1csQUFLRSxBQUlULEFBS0MsQUFLRyxBQVNBLEFBaUJQLEFBaUJBLEFBS08sQUFLTyxBQUlYLFVBdEZDLENBd0RHLEFBaUJELENBL0VMLEVBMEJiLEFBbUVtQixDQTlEQyxDQXhDUCxFQTZDRSxBQVNILEFBdUNaLEdBbkVpQixFQUtqQixDQXJCbUIsQ0FNSixBQWtGZixHQWpHaUIsQUF3RndDLENBbEMxQyxBQWlCTixHQTFCZ0IsQUF5RFQsRUE5RGhCLEdBZEEsQUE4Q1UsRUF4RFMsR0FOTyxDQTZDUixDQXREQSxFQXdFSCxDQThCZixTQXpEYyxDQTdCdUIsR0F1QzFCLEFBa0JGLENBeEVpQixNQVMxQixDQWdFZSxDQTVCRixDQVVJLFdBVFMsQ0E0Qk4sSUF6RXVELEFBd0QzRCxJQXpDeUIsV0EwQzNCLEFBaUI0QixhQWhCdkIsYUExQ08sS0EyQ2MsT0FieEMsQUE2QnlDLE9BV3pDLEdBckUwQixJQWhCVyxlQTREWCxVQWVZLFNBMUV0QyxNQTREZSxjQTVDZixBQTZDQSxPQWNxQyxtQ0FDRCxrQ0FDSCx5R0FDakMiLCJmaWxlIjoiY29tcG9uZW50cy9Db250YWN0L3N0eWxlcy9jb250YWN0LmpzIiwic291cmNlUm9vdCI6Ii9ob21lL1JhbmFjb2RlL0RvY3VtZW50cy9jb2RlX3BsYXlncm91bmQvYmxvZ19qYXZhc2NydXB0Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGNzcyBmcm9tICdzdHlsZWQtanN4L2Nzcyc7XG5cbmV4cG9ydCBkZWZhdWx0IGNzc2Bcblx0LmZvcm1fX2NvbnRhaW5lciB7XG5cdFx0bWFyZ2luOiAxZW0gYXV0bztcblx0XHRwYWRkaW5nOiAxZW07XG5cdFx0bWF4LXdpZHRoOiA2MDBweDtcblx0XHRiYWNrZ3JvdW5kOiB3aGl0ZTtcblx0XHRib3JkZXI6IDFweCBzb2xpZCAjZGJkYmRiO1xuXHRcdGJveC1zaGFkb3c6IDAgMCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDVweCA1cHggMCByZ2JhKDAsIDAsIDAsIDAuMjQpO1xuXHRcdGZvbnQtZmFtaWx5OiBSYWxld2F5LCBHZW9yZ2lhLCBzZXJpZjtcblx0fVxuXHQuZm9ybV9fY29udGFpbmVyIGZvcm0ge1xuXHRcdHBhZGRpbmc6IDFlbTtcblx0XHRoZWlnaHQ6IGF1dG87XG5cdFx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHRcdGJvcmRlcjogMXB4IHNvbGlkICNkYmRiZGI7XG5cdH1cblx0LmZvcm1fX2NvbnRhaW5lciBpbnB1dCB7XG5cdFx0d2lkdGg6IDkwJTtcblx0XHRmb250LXNpemU6IDIwcHg7XG5cdFx0cGFkZGluZzogMC41ZW07XG5cdFx0bWFyZ2luOiAwLjVlbSBhdXRvO1xuXHRcdGJhY2tncm91bmQ6IHJnYmEoMTM2LCAxMjgsIDEyNywgMC4xKTtcblx0XHRib3JkZXI6IDFweCBzb2xpZCByZ2JhKDIzMywgNTQsIDIyLCAwLjUpO1xuXHRcdGNvbG9yOiByZ2JhKDEsIDYsIDcsIDAuOCk7XG5cdFx0dHJhbnNpdGlvbjogMC40cyBlYXNlIGFsbDtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgKjpyZXF1aXJlZCB7XG5cdFx0LW1vei1ib3gtc2hhZG93OiBub25lO1xuXHRcdGJveC1zaGFkb3c6IG5vbmU7XG5cdH1cblxuXHQuZm9ybV9fY29udGFpbmVyIGlucHV0OmludmFsaWQge1xuXHRcdGJveC1zaGFkb3c6IDAgMCAzcHggcmVkO1xuXHR9XG5cdC5mb3JtX19jb250YWluZXIgaW5wdXQ6Zm9jdXMsXG5cdC5mb3JtX19jb250YWluZXIgdGV4dGFyZWE6Zm9jdXMge1xuXHRcdHBhZGRpbmc6IDAuN2VtO1xuXHR9XG5cblx0LmZvcm1fX2NvbnRhaW5lciBpbnB1dDo6cGxhY2Vob2xkZXIsXG5cdC5mb3JtX19jb250YWluZXIgdGV4dGFyZWE6OnBsYWNlaG9sZGVyIHtcblx0XHRmb250LXNpemU6IDIwcHg7XG5cdFx0cGFkZGluZy1sZWZ0OiAwLjllbTtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgdGV4dGFyZWEge1xuXHRcdG1hcmdpbjogMC41ZW0gYXV0bztcblx0XHRwYWRkaW5nOiAwLjVlbTtcblx0XHR3aWR0aDogY2FsYygxMDAlIC0gNDVweCk7XG5cdFx0aGVpZ2h0OiAzMDBweDtcblx0XHRyZXNpemU6IG5vbmU7XG5cdFx0dHJhbnNpdGlvbjogMC40cyBlYXNlIGFsbDtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgYnV0dG9uIHtcblx0XHRwb3NpdGlvbjogcmVsYXRpdmU7XG5cdFx0d2lkdGg6IDEwMCU7XG5cdFx0ZGlzcGxheTogYmxvY2s7XG5cdFx0bWFyZ2luOiAzMHB4IGF1dG87XG5cdFx0cGFkZGluZzogMDtcblx0XHRvdmVyZmxvdzogaGlkZGVuO1xuXG5cdFx0Ym9yZGVyLXdpZHRoOiAwO1xuXHRcdG91dGxpbmU6IG5vbmU7XG5cdFx0Ym9yZGVyLXJhZGl1czogMnB4O1xuXHRcdGJveC1zaGFkb3c6IDAgMXB4IDRweCByZ2JhKDAsIDAsIDAsIC42KTtcblxuXHRcdGJhY2tncm91bmQtY29sb3I6ICMyZWNjNzE7XG5cdFx0Y29sb3I6ICNlY2YwZjE7XG5cdH1cblxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbjpiZWZvcmUge1xuXHRcdGNvbnRlbnQ6IFwiXCI7XG5cdFx0cG9zaXRpb246IGFic29sdXRlO1xuXHRcdHRvcDogNTAlO1xuXHRcdGxlZnQ6IDUwJTtcblx0XHRkaXNwbGF5OiBibG9jaztcblx0XHR3aWR0aDogMDtcblx0XHRwYWRkaW5nLXRvcDogMDtcblx0XHRib3JkZXItcmFkaXVzOiAxMDAlO1xuXHRcdGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjM2LCAyNDAsIDI0MSwgLjMpO1xuXHRcdC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdFx0LW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcblx0XHQtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdFx0LW8tdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdFx0dHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdH1cblxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbjphY3RpdmU6YmVmb3JlIHtcblx0XHR3aWR0aDogMTIwJTtcblx0XHRwYWRkaW5nLXRvcDogMTIwJTtcblx0XHR0cmFuc2l0aW9uOiB3aWR0aCAuMnMgZWFzZS1vdXQsIHBhZGRpbmctdG9wIC4ycyBlYXNlLW91dDtcblx0fVxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbiA+ICoge1xuXHRcdHBvc2l0aW9uOiByZWxhdGl2ZTtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgYnV0dG9uOmhvdmVyLFxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbjpmb2N1cyB7XG5cdFx0YmFja2dyb3VuZC1jb2xvcjogIzI3YWU2MDtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgYnV0dG9uIHNwYW4ge1xuXHRcdGRpc3BsYXk6IGJsb2NrO1xuXHRcdHBhZGRpbmc6IDEycHggMjRweDtcblx0XHRmb250LXNpemU6IDI0cHg7XG5cdH1cbmA7XG4iXX0= */\n/*@ sourceURL=components/Contact/styles/contact.js */');
+
+_defaultExport.__hash = '324044057';
+_defaultExport.__scoped = '.form__container.jsx-4220862744{margin:1em auto;padding:1em;max-width:600px;background:white;border:1px solid #dbdbdb;box-shadow:0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);font-family:Raleway,Georgia,serif;}.form__container.jsx-4220862744 form.jsx-4220862744{padding:1em;height:auto;text-align:center;border:1px solid #dbdbdb;}.form__container.jsx-4220862744 input.jsx-4220862744{width:90%;font-size:20px;padding:0.5em;margin:0.5em auto;background:rgba(136,128,127,0.1);border:1px solid rgba(233,54,22,0.5);color:rgba(1,6,7,0.8);-webkit-transition:0.4s ease all;transition:0.4s ease all;}.form__container.jsx-4220862744 *.jsx-4220862744:required{-moz-box-shadow:none;box-shadow:none;}.form__container.jsx-4220862744 input.jsx-4220862744:invalid{box-shadow:0 0 3px red;}.form__container.jsx-4220862744 input.jsx-4220862744:focus,.form__container.jsx-4220862744 textarea.jsx-4220862744:focus{padding:0.7em;}.form__container.jsx-4220862744 input.jsx-4220862744::-webkit-input-placeholder,.form__container.jsx-4220862744 textarea.jsx-4220862744::-webkit-input-placeholder{font-size:20px;padding-left:0.9em;}.form__container.jsx-4220862744 input.jsx-4220862744::-moz-placeholder,.form__container.jsx-4220862744 textarea.jsx-4220862744::-moz-placeholder{font-size:20px;padding-left:0.9em;}.form__container.jsx-4220862744 input.jsx-4220862744:-ms-input-placeholder,.form__container.jsx-4220862744 textarea.jsx-4220862744:-ms-input-placeholder{font-size:20px;padding-left:0.9em;}.form__container.jsx-4220862744 input.jsx-4220862744::placeholder,.form__container.jsx-4220862744 textarea.jsx-4220862744::placeholder{font-size:20px;padding-left:0.9em;}.form__container.jsx-4220862744 textarea.jsx-4220862744{margin:0.5em auto;padding:0.5em;width:calc(100% - 45px);height:300px;resize:none;-webkit-transition:0.4s ease all;transition:0.4s ease all;}.form__container.jsx-4220862744 button.jsx-4220862744{position:relative;width:100%;display:block;margin:30px auto;padding:0;overflow:hidden;border-width:0;outline:none;border-radius:2px;box-shadow:0 1px 4px rgba(0,0,0,.6);background-color:#2ecc71;color:#ecf0f1;}.form__container.jsx-4220862744 button.jsx-4220862744:before{content:"";position:absolute;top:50%;left:50%;display:block;width:0;padding-top:0;border-radius:100%;background-color:rgba(236,240,241,.3);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}.form__container.jsx-4220862744 button.jsx-4220862744:active.jsx-4220862744:before{width:120%;padding-top:120%;-webkit-transition:width .2s ease-out,padding-top .2s ease-out;transition:width .2s ease-out,padding-top .2s ease-out;}.form__container.jsx-4220862744 button.jsx-4220862744>*.jsx-4220862744{position:relative;}.form__container.jsx-4220862744 button.jsx-4220862744:hover,.form__container.jsx-4220862744 button.jsx-4220862744:focus{background-color:#27ae60;}.form__container.jsx-4220862744 button.jsx-4220862744 span.jsx-4220862744{display:block;padding:12px 24px;font-size:24px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQ29udGFjdC9zdHlsZXMvY29udGFjdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFa0IsQUFHbUIsQUFTSixBQU1GLEFBV1csQUFLRSxBQUlULEFBS0MsQUFLRyxBQVNBLEFBaUJQLEFBaUJBLEFBS08sQUFLTyxBQUlYLFVBdEZDLENBd0RHLEFBaUJELENBL0VMLEVBMEJiLEFBbUVtQixDQTlEQyxDQXhDUCxFQTZDRSxBQVNILEFBdUNaLEdBbkVpQixFQUtqQixDQXJCbUIsQ0FNSixBQWtGZixHQWpHaUIsQUF3RndDLENBbEMxQyxBQWlCTixHQTFCZ0IsQUF5RFQsRUE5RGhCLEdBZEEsQUE4Q1UsRUF4RFMsR0FOTyxDQTZDUixDQXREQSxFQXdFSCxDQThCZixTQXpEYyxDQTdCdUIsR0F1QzFCLEFBa0JGLENBeEVpQixNQVMxQixDQWdFZSxDQTVCRixDQVVJLFdBVFMsQ0E0Qk4sSUF6RXVELEFBd0QzRCxJQXpDeUIsV0EwQzNCLEFBaUI0QixhQWhCdkIsYUExQ08sS0EyQ2MsT0FieEMsQUE2QnlDLE9BV3pDLEdBckUwQixJQWhCVyxlQTREWCxVQWVZLFNBMUV0QyxNQTREZSxjQTVDZixBQTZDQSxPQWNxQyxtQ0FDRCxrQ0FDSCx5R0FDakMiLCJmaWxlIjoiY29tcG9uZW50cy9Db250YWN0L3N0eWxlcy9jb250YWN0LmpzIiwic291cmNlUm9vdCI6Ii9ob21lL1JhbmFjb2RlL0RvY3VtZW50cy9jb2RlX3BsYXlncm91bmQvYmxvZ19qYXZhc2NydXB0Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGNzcyBmcm9tICdzdHlsZWQtanN4L2Nzcyc7XG5cbmV4cG9ydCBkZWZhdWx0IGNzc2Bcblx0LmZvcm1fX2NvbnRhaW5lciB7XG5cdFx0bWFyZ2luOiAxZW0gYXV0bztcblx0XHRwYWRkaW5nOiAxZW07XG5cdFx0bWF4LXdpZHRoOiA2MDBweDtcblx0XHRiYWNrZ3JvdW5kOiB3aGl0ZTtcblx0XHRib3JkZXI6IDFweCBzb2xpZCAjZGJkYmRiO1xuXHRcdGJveC1zaGFkb3c6IDAgMCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDVweCA1cHggMCByZ2JhKDAsIDAsIDAsIDAuMjQpO1xuXHRcdGZvbnQtZmFtaWx5OiBSYWxld2F5LCBHZW9yZ2lhLCBzZXJpZjtcblx0fVxuXHQuZm9ybV9fY29udGFpbmVyIGZvcm0ge1xuXHRcdHBhZGRpbmc6IDFlbTtcblx0XHRoZWlnaHQ6IGF1dG87XG5cdFx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHRcdGJvcmRlcjogMXB4IHNvbGlkICNkYmRiZGI7XG5cdH1cblx0LmZvcm1fX2NvbnRhaW5lciBpbnB1dCB7XG5cdFx0d2lkdGg6IDkwJTtcblx0XHRmb250LXNpemU6IDIwcHg7XG5cdFx0cGFkZGluZzogMC41ZW07XG5cdFx0bWFyZ2luOiAwLjVlbSBhdXRvO1xuXHRcdGJhY2tncm91bmQ6IHJnYmEoMTM2LCAxMjgsIDEyNywgMC4xKTtcblx0XHRib3JkZXI6IDFweCBzb2xpZCByZ2JhKDIzMywgNTQsIDIyLCAwLjUpO1xuXHRcdGNvbG9yOiByZ2JhKDEsIDYsIDcsIDAuOCk7XG5cdFx0dHJhbnNpdGlvbjogMC40cyBlYXNlIGFsbDtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgKjpyZXF1aXJlZCB7XG5cdFx0LW1vei1ib3gtc2hhZG93OiBub25lO1xuXHRcdGJveC1zaGFkb3c6IG5vbmU7XG5cdH1cblxuXHQuZm9ybV9fY29udGFpbmVyIGlucHV0OmludmFsaWQge1xuXHRcdGJveC1zaGFkb3c6IDAgMCAzcHggcmVkO1xuXHR9XG5cdC5mb3JtX19jb250YWluZXIgaW5wdXQ6Zm9jdXMsXG5cdC5mb3JtX19jb250YWluZXIgdGV4dGFyZWE6Zm9jdXMge1xuXHRcdHBhZGRpbmc6IDAuN2VtO1xuXHR9XG5cblx0LmZvcm1fX2NvbnRhaW5lciBpbnB1dDo6cGxhY2Vob2xkZXIsXG5cdC5mb3JtX19jb250YWluZXIgdGV4dGFyZWE6OnBsYWNlaG9sZGVyIHtcblx0XHRmb250LXNpemU6IDIwcHg7XG5cdFx0cGFkZGluZy1sZWZ0OiAwLjllbTtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgdGV4dGFyZWEge1xuXHRcdG1hcmdpbjogMC41ZW0gYXV0bztcblx0XHRwYWRkaW5nOiAwLjVlbTtcblx0XHR3aWR0aDogY2FsYygxMDAlIC0gNDVweCk7XG5cdFx0aGVpZ2h0OiAzMDBweDtcblx0XHRyZXNpemU6IG5vbmU7XG5cdFx0dHJhbnNpdGlvbjogMC40cyBlYXNlIGFsbDtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgYnV0dG9uIHtcblx0XHRwb3NpdGlvbjogcmVsYXRpdmU7XG5cdFx0d2lkdGg6IDEwMCU7XG5cdFx0ZGlzcGxheTogYmxvY2s7XG5cdFx0bWFyZ2luOiAzMHB4IGF1dG87XG5cdFx0cGFkZGluZzogMDtcblx0XHRvdmVyZmxvdzogaGlkZGVuO1xuXG5cdFx0Ym9yZGVyLXdpZHRoOiAwO1xuXHRcdG91dGxpbmU6IG5vbmU7XG5cdFx0Ym9yZGVyLXJhZGl1czogMnB4O1xuXHRcdGJveC1zaGFkb3c6IDAgMXB4IDRweCByZ2JhKDAsIDAsIDAsIC42KTtcblxuXHRcdGJhY2tncm91bmQtY29sb3I6ICMyZWNjNzE7XG5cdFx0Y29sb3I6ICNlY2YwZjE7XG5cdH1cblxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbjpiZWZvcmUge1xuXHRcdGNvbnRlbnQ6IFwiXCI7XG5cdFx0cG9zaXRpb246IGFic29sdXRlO1xuXHRcdHRvcDogNTAlO1xuXHRcdGxlZnQ6IDUwJTtcblx0XHRkaXNwbGF5OiBibG9jaztcblx0XHR3aWR0aDogMDtcblx0XHRwYWRkaW5nLXRvcDogMDtcblx0XHRib3JkZXItcmFkaXVzOiAxMDAlO1xuXHRcdGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjM2LCAyNDAsIDI0MSwgLjMpO1xuXHRcdC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdFx0LW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcblx0XHQtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdFx0LW8tdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdFx0dHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG5cdH1cblxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbjphY3RpdmU6YmVmb3JlIHtcblx0XHR3aWR0aDogMTIwJTtcblx0XHRwYWRkaW5nLXRvcDogMTIwJTtcblx0XHR0cmFuc2l0aW9uOiB3aWR0aCAuMnMgZWFzZS1vdXQsIHBhZGRpbmctdG9wIC4ycyBlYXNlLW91dDtcblx0fVxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbiA+ICoge1xuXHRcdHBvc2l0aW9uOiByZWxhdGl2ZTtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgYnV0dG9uOmhvdmVyLFxuXHQuZm9ybV9fY29udGFpbmVyIGJ1dHRvbjpmb2N1cyB7XG5cdFx0YmFja2dyb3VuZC1jb2xvcjogIzI3YWU2MDtcblx0fVxuXG5cdC5mb3JtX19jb250YWluZXIgYnV0dG9uIHNwYW4ge1xuXHRcdGRpc3BsYXk6IGJsb2NrO1xuXHRcdHBhZGRpbmc6IDEycHggMjRweDtcblx0XHRmb250LXNpemU6IDI0cHg7XG5cdH1cbmA7XG4iXX0= */\n/*@ sourceURL=components/Contact/styles/contact.js */';
+_defaultExport.__scopedHash = '4220862744';
 
 
-
-
-var PostFooter = function PostFooter(_ref) {
-	var published = _ref.published,
-	    tags = _ref.tags;
-	return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-		"footer",
-		{
-			className: "jsx-3961368845",
-			__source: {
-				fileName: _jsxFileName,
-				lineNumber: 4
-			}
-		},
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			"strong",
-			{
-				className: "jsx-3961368845",
-				__source: {
-					fileName: _jsxFileName,
-					lineNumber: 5
-				}
-			},
-			"Publicado el ",
-			new Date(published).toLocaleDateString(),
-			" ~ ",
-			new Date(published).toLocaleTimeString()
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			"div",
-			{
-				className: "jsx-3961368845" + " " + "tags",
-				__source: {
-					fileName: _jsxFileName,
-					lineNumber: 8
-				}
-			},
-			tags.map(function (tag) {
-				return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-					"span",
-					{ key: tag.slug, className: "jsx-3961368845",
-						__source: {
-							fileName: _jsxFileName,
-							lineNumber: 10
-						}
-					},
-					tag.name
-				);
-			})
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-			styleId: "3961368845",
-			css: "footer.jsx-3961368845{text-align:center;}.tags.jsx-3961368845{margin:0.5em 0;padding:0.6em;}.tags.jsx-3961368845 span.jsx-3961368845{background:#4a4a4a;color:#fff;font-size:14px;padding:.4em;margin-right:.6em;border-radius:12px;margin-top:22em;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQmxvZ1Bvc3RzTGlzdC9Qb3N0Rm9vdGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVljLEFBR3VCLEFBR0gsQUFJSSxlQUhMLEdBSGYsQ0FPWSxVQUhaLENBSWdCLGVBQ0YsYUFDSyxrQkFDQyxtQkFDSCxnQkFDakIiLCJmaWxlIjoiY29tcG9uZW50cy9CbG9nUG9zdHNMaXN0L1Bvc3RGb290ZXIuanMiLCJzb3VyY2VSb290IjoiL2hvbWUvUmFuYWNvZGUvRG9jdW1lbnRzL2NvZGVfcGxheWdyb3VuZC9ibG9nX2phdmFzY3J1cHQiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnO1xuXG5jb25zdCBQb3N0Rm9vdGVyID0gKHsgcHVibGlzaGVkLCB0YWdzIH0pID0+IChcblx0PGZvb3Rlcj5cblx0XHQ8c3Ryb25nPlxuXHRcdFx0UHVibGljYWRvIGVsIHtuZXcgRGF0ZShwdWJsaXNoZWQpLnRvTG9jYWxlRGF0ZVN0cmluZygpfSB+IHtuZXcgRGF0ZShwdWJsaXNoZWQpLnRvTG9jYWxlVGltZVN0cmluZygpfVxuXHRcdDwvc3Ryb25nPlxuXHRcdDxkaXYgY2xhc3NOYW1lPVwidGFnc1wiPlxuXHRcdFx0e3RhZ3MubWFwKCh0YWcpID0+IHtcblx0XHRcdFx0cmV0dXJuIDxzcGFuIGtleT17dGFnLnNsdWd9Pnt0YWcubmFtZX08L3NwYW4+O1xuXHRcdFx0fSl9XG5cdFx0PC9kaXY+XG5cdFx0PHN0eWxlIGpzeD57YFxuXHRcdFx0Zm9vdGVyIHtcblx0XHRcdFx0dGV4dC1hbGlnbjogY2VudGVyO1xuXHRcdFx0fVxuXHRcdFx0LnRhZ3Mge1xuXHRcdFx0XHRtYXJnaW46IDAuNWVtIDA7XG5cdFx0XHRcdHBhZGRpbmc6IDAuNmVtO1xuXHRcdFx0fVxuXHRcdFx0LnRhZ3Mgc3BhbiB7XG5cdFx0XHRcdGJhY2tncm91bmQ6ICM0YTRhNGE7XG5cdFx0XHRcdGNvbG9yOiAjZmZmO1xuXHRcdFx0XHRmb250LXNpemU6IDE0cHg7XG5cdFx0XHRcdHBhZGRpbmc6IC40ZW07XG5cdFx0XHRcdG1hcmdpbi1yaWdodDogLjZlbTtcblx0XHRcdFx0Ym9yZGVyLXJhZGl1czogMTJweDtcblx0XHRcdFx0bWFyZ2luLXRvcDogMjJlbTtcblx0XHRcdH1cblx0XHRgfTwvc3R5bGU+XG5cdDwvZm9vdGVyPlxuKTtcblxuUG9zdEZvb3Rlci5wcm9wVHlwZXMgPSB7XG5cdHB1Ymxpc2hlZDogUHJvcFR5cGVzLnN0cmluZyxcblx0dGFnczogUHJvcFR5cGVzLmFycmF5LmlzUmVxdWlyZWRcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFBvc3RGb290ZXI7XG4iXX0= */\n/*@ sourceURL=components/BlogPostsList/PostFooter.js */"
-		})
-	);
-};
-
-PostFooter.propTypes = {
-	published: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string,
-	tags: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.array.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (PostFooter);
-
-/***/ }),
-
-/***/ "./components/BlogPostsList/PostHeader.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("prop-types");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-var _jsxFileName = "/home/Ranacode/Documents/code_playground/blog_javascrupt/components/BlogPostsList/PostHeader.js";
-
-
-
-
-var PostHeader = function PostHeader(_ref) {
-	var title = _ref.title,
-	    author = _ref.author;
-	return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-		"div",
-		{
-			className: "jsx-1351611648" + " " + "post__header--content",
-			__source: {
-				fileName: _jsxFileName,
-				lineNumber: 4
-			}
-		},
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			"h2",
-			{
-				className: "jsx-1351611648",
-				__source: {
-					fileName: _jsxFileName,
-					lineNumber: 5
-				}
-			},
-			title
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			"span",
-			{
-				className: "jsx-1351611648",
-				__source: {
-					fileName: _jsxFileName,
-					lineNumber: 6
-				}
-			},
-			"Escrito por ",
-			author.first_name,
-			" ",
-			author.last_name
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-			styleId: "1351611648",
-			css: ".post__header--content.jsx-1351611648{background:#eee;padding:0.3em 1em;border:1px solid #dbdbdb;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.post__header--content.jsx-1351611648 h2.jsx-1351611648{margin:0.2em;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;}.post__header--content.jsx-1351611648 span.jsx-1351611648{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;}img.jsx-1351611648{margin-right:1em;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvQmxvZ1Bvc3RzTGlzdC9Qb3N0SGVhZGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFjLEFBR3FCLEFBT0gsQUFLTyxBQUdILGFBUEssR0FQSixDQWVuQixpQkFkMEIseUJBQ1osYUFVZCxtQkFKQSwwQ0FMK0IsbUhBQy9CIiwiZmlsZSI6ImNvbXBvbmVudHMvQmxvZ1Bvc3RzTGlzdC9Qb3N0SGVhZGVyLmpzIiwic291cmNlUm9vdCI6Ii9ob21lL1JhbmFjb2RlL0RvY3VtZW50cy9jb2RlX3BsYXlncm91bmQvYmxvZ19qYXZhc2NydXB0Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcblxuY29uc3QgUG9zdEhlYWRlciA9ICh7IHRpdGxlLCBhdXRob3IgfSkgPT4gKFxuXHQ8ZGl2IGNsYXNzTmFtZT1cInBvc3RfX2hlYWRlci0tY29udGVudFwiPlxuXHRcdDxoMj57dGl0bGV9PC9oMj5cblx0XHQ8c3Bhbj5cblx0XHRcdEVzY3JpdG8gcG9yIHthdXRob3IuZmlyc3RfbmFtZX0ge2F1dGhvci5sYXN0X25hbWV9XG5cdFx0PC9zcGFuPlxuXHRcdDxzdHlsZSBqc3g+e2Bcblx0XHRcdC5wb3N0X19oZWFkZXItLWNvbnRlbnQge1xuXHRcdFx0XHRiYWNrZ3JvdW5kOiAjZWVlO1xuXHRcdFx0XHRwYWRkaW5nOiAwLjNlbSAxZW07XG5cdFx0XHRcdGJvcmRlcjogMXB4IHNvbGlkICNkYmRiZGI7XG5cdFx0XHRcdGRpc3BsYXk6IGZsZXg7XG5cdFx0XHRcdGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcblx0XHRcdH1cblx0XHRcdC5wb3N0X19oZWFkZXItLWNvbnRlbnQgaDIge1xuXHRcdFx0XHRtYXJnaW46IDAuMmVtO1xuXHRcdFx0XHRhbGlnbi1zZWxmOiBmbGV4LXN0YXJ0O1xuXHRcdFx0fVxuXG5cdFx0XHQucG9zdF9faGVhZGVyLS1jb250ZW50IHNwYW4ge1xuXHRcdFx0XHRhbGlnbi1zZWxmOiBmbGV4LWVuZDtcblx0XHRcdH1cblx0XHRcdGltZyB7XG5cdFx0XHRcdG1hcmdpbi1yaWdodDogMWVtO1xuXHRcdFx0fVxuXHRcdGB9PC9zdHlsZT5cblx0PC9kaXY+XG4pO1xuXG5Qb3N0SGVhZGVyLnByb3BUeXBlcyA9IHtcblx0dGl0bGU6IFByb3BUeXBlcy5zdHJpbmcuaXNSZXF1aXJlZCxcblx0YXV0aG9yOiBQcm9wVHlwZXMuc2hhcGUoe1xuXHRcdGZpcnN0X25hbWU6IFByb3BUeXBlcy5zdHJpbmcuaXNSZXF1aXJlZCxcblx0XHRsYXN0X25hbWU6IFByb3BUeXBlcy5zdHJpbmcuaXNSZXF1aXJlZFxuXHR9KVxufTtcbmV4cG9ydCBkZWZhdWx0IFBvc3RIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=components/BlogPostsList/PostHeader.js */"
-		})
-	);
-};
-
-PostHeader.propTypes = {
-	title: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string.isRequired,
-	author: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.shape({
-		first_name: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string.isRequired,
-		last_name: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string.isRequired
-	})
-};
-/* harmony default export */ __webpack_exports__["a"] = (PostHeader);
+/* harmony default export */ __webpack_exports__["a"] = (_defaultExport);
 
 /***/ }),
 
@@ -586,37 +378,28 @@ var Layout = function Layout(props) {
 				},
 				props.htmlTitle
 			),
-			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', {
-				href: 'https://fonts.googleapis.com/css?family=Raleway|Lusitana',
-				rel: 'stylesheet',
-				key: 'globalFonts',
-				__source: {
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Raleway|Lusitana', rel: 'stylesheet', __source: {
 					fileName: _jsxFileName,
 					lineNumber: 12
 				}
 			}),
 			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { defer: true, src: 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 17
-				}
-			}),
-			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('script', { defer: true, src: 'https://static.mailerlite.com/data/webforms/778608/m9q1i7.js?v1', __source: {
-					fileName: _jsxFileName,
-					lineNumber: 18
+					lineNumber: 13
 				}
 			})
 		),
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar__["a" /* default */], {
 			__source: {
 				fileName: _jsxFileName,
-				lineNumber: 20
+				lineNumber: 15
 			}
 		}),
 		props.children,
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Footer__["a" /* default */], {
 			__source: {
 				fileName: _jsxFileName,
-				lineNumber: 22
+				lineNumber: 17
 			}
 		})
 	);
@@ -752,7 +535,7 @@ var Navbar = function (_React$Component) {
 					},
 					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
 						'li',
-						{ title: 'Encuentra los art\xEDculos de tu inter\xE9s', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
+						{ title: 'Todo lo relacionado con el Front esta aqu\xED', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
 							__source: {
 								fileName: _jsxFileName,
 								lineNumber: 27
@@ -774,13 +557,13 @@ var Navbar = function (_React$Component) {
 										lineNumber: 29
 									}
 								},
-								'Art\xEDculos'
+								'Front-End'
 							)
 						)
 					),
 					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
 						'li',
-						{ title: 'Todo lo relacionado con el Front esta aqu\xED', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
+						{ title: 'Todo lo relacionado con el Back esta aqu\xED', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
 							__source: {
 								fileName: _jsxFileName,
 								lineNumber: 32
@@ -802,13 +585,13 @@ var Navbar = function (_React$Component) {
 										lineNumber: 34
 									}
 								},
-								'Front-End'
+								'Back-End'
 							)
 						)
 					),
 					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
 						'li',
-						{ title: 'Todo lo relacionado con el Back esta aqu\xED', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
+						{ title: 'Nuevos cursos pr\xF3ximamente', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash + ' ' + 'disabled',
 							__source: {
 								fileName: _jsxFileName,
 								lineNumber: 37
@@ -830,13 +613,13 @@ var Navbar = function (_React$Component) {
 										lineNumber: 39
 									}
 								},
-								'Back-End'
+								'Cursos'
 							)
 						)
 					),
 					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
 						'li',
-						{ title: 'Nuevos cursos pr\xF3ximamente', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash + ' ' + 'disabled',
+						{ title: 'Dejame tus inquietudes en esta zona', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
 							__source: {
 								fileName: _jsxFileName,
 								lineNumber: 42
@@ -856,34 +639,6 @@ var Navbar = function (_React$Component) {
 									__source: {
 										fileName: _jsxFileName,
 										lineNumber: 44
-									}
-								},
-								'Cursos'
-							)
-						)
-					),
-					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-						'li',
-						{ title: 'Dejame tus inquietudes en esta zona', className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
-							__source: {
-								fileName: _jsxFileName,
-								lineNumber: 47
-							}
-						},
-						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-							__WEBPACK_IMPORTED_MODULE_2_next_link___default.a,
-							{ href: '/contact', __source: {
-									fileName: _jsxFileName,
-									lineNumber: 48
-								}
-							},
-							__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-								'a',
-								{
-									className: 'jsx-' + __WEBPACK_IMPORTED_MODULE_3__styles_navbar__["a" /* default */].__scopedHash,
-									__source: {
-										fileName: _jsxFileName,
-										lineNumber: 49
 									}
 								},
 								'Contacto'
@@ -936,267 +691,47 @@ _defaultExport.__scopedHash = '1411295064';
 
 /***/ }),
 
-/***/ "./components/NewsletterForm/Newsletter.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-var _jsxFileName = "/home/Ranacode/Documents/code_playground/blog_javascrupt/components/NewsletterForm/Newsletter.js";
-
-
-var Newsletter = function Newsletter(props) {
-	return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-		"div",
-		{
-			className: "jsx-2472829666" + " " + "newsletter",
-			__source: {
-				fileName: _jsxFileName,
-				lineNumber: 2
-			}
-		},
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-			"form",
-			{
-				action: "https://javascrupt.us17.list-manage.com/subscribe/post?u=66eb37d4582b7216a539d121f&id=950b6165a1",
-				method: "POST",
-				name: "mc-embedded-subscribe-form",
-				className: "jsx-2472829666",
-				__source: {
-					fileName: _jsxFileName,
-					lineNumber: 3
-				}
-			},
-			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-				"h2",
-				{
-					className: "jsx-2472829666",
-					__source: {
-						fileName: _jsxFileName,
-						lineNumber: 8
-					}
-				},
-				"Ent\xE9rate de las \xFAltimas noticias de Javascrupt"
-			),
-			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-				"div",
-				{
-					className: "jsx-2472829666" + " " + "email-input",
-					__source: {
-						fileName: _jsxFileName,
-						lineNumber: 9
-					}
-				},
-				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("i", {
-					className: "jsx-2472829666" + " " + "far fa-3x fa-envelope",
-					__source: {
-						fileName: _jsxFileName,
-						lineNumber: 10
-					}
-				}),
-				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("input", { type: "email", name: "EMAIL", placeholder: "Tu email aqui", required: true, className: "jsx-2472829666",
-					__source: {
-						fileName: _jsxFileName,
-						lineNumber: 11
-					}
-				})
-			),
-			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-				"button",
-				{ type: "submit", className: "jsx-2472829666",
-					__source: {
-						fileName: _jsxFileName,
-						lineNumber: 13
-					}
-				},
-				"\xA1Suscribirme!"
-			)
-		),
-		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-			styleId: "2472829666",
-			css: ".newsletter.jsx-2472829666{font-family:Lusitana,Georgia,sans-serif;margin:1em 0.5em;padding:1em;border:1px solid #dbdbdb;background:white;}.newsletter.jsx-2472829666 form.jsx-2472829666{padding:0.1em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}.newsletter.jsx-2472829666 form.jsx-2472829666 h2.jsx-2472829666{margin:0.1em;}.newsletter.jsx-2472829666 form.jsx-2472829666 .email-input.jsx-2472829666{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.email-input.jsx-2472829666 input.jsx-2472829666{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}email-input.jsx-2472829666 svg.jsx-2472829666{margin-right:0.3em;}.newsletter.jsx-2472829666 form.jsx-2472829666 button.jsx-2472829666{width:100%;background:#f5da55;color:#323330;text-align:center;padding:0.5em;font-size:20px;font-weight:bold;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvTmV3c2xldHRlckZvcm0vTmV3c2xldHRlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFlSSxBQUdnRCxBQU81QixBQU9ELEFBSUEsQUFNRCxBQUdPLEFBSVIsV0FDUSxFQWpCcEIsQ0FQYyxLQW9CZCxXQUtlLFVBaENHLElBaUNDLGFBaENOLEtBaUNFLE9BaENXLEVBc0IxQixHQU5vQixFQWlCSixZQTNCTyxHQTRCTCxHQWpDQSxjQWtDbEIsR0FqQ0EsZ0NBZW9CLHVCQVZFLHNFQVd0QixNQVZBIiwiZmlsZSI6ImNvbXBvbmVudHMvTmV3c2xldHRlckZvcm0vTmV3c2xldHRlci5qcyIsInNvdXJjZVJvb3QiOiIvaG9tZS9SYW5hY29kZS9Eb2N1bWVudHMvY29kZV9wbGF5Z3JvdW5kL2Jsb2dfamF2YXNjcnVwdCIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IE5ld3NsZXR0ZXIgPSAocHJvcHMpID0+IChcblx0PGRpdiBjbGFzc05hbWU9XCJuZXdzbGV0dGVyXCI+XG5cdFx0PGZvcm1cblx0XHRcdGFjdGlvbj1cImh0dHBzOi8vamF2YXNjcnVwdC51czE3Lmxpc3QtbWFuYWdlLmNvbS9zdWJzY3JpYmUvcG9zdD91PTY2ZWIzN2Q0NTgyYjcyMTZhNTM5ZDEyMWYmYW1wO2lkPTk1MGI2MTY1YTFcIlxuXHRcdFx0bWV0aG9kPVwiUE9TVFwiXG5cdFx0XHRuYW1lPVwibWMtZW1iZWRkZWQtc3Vic2NyaWJlLWZvcm1cIlxuXHRcdD5cblx0XHRcdDxoMj5FbnTDqXJhdGUgZGUgbGFzIMO6bHRpbWFzIG5vdGljaWFzIGRlIEphdmFzY3J1cHQ8L2gyPlxuXHRcdFx0PGRpdiBjbGFzc05hbWU9XCJlbWFpbC1pbnB1dFwiPlxuXHRcdFx0XHQ8aSBjbGFzc05hbWU9XCJmYXIgZmEtM3ggZmEtZW52ZWxvcGVcIiAvPlxuXHRcdFx0XHQ8aW5wdXQgdHlwZT1cImVtYWlsXCIgbmFtZT1cIkVNQUlMXCIgcGxhY2Vob2xkZXI9XCJUdSBlbWFpbCBhcXVpXCIgcmVxdWlyZWQgLz5cblx0XHRcdDwvZGl2PlxuXHRcdFx0PGJ1dHRvbiB0eXBlPVwic3VibWl0XCI+wqFTdXNjcmliaXJtZSE8L2J1dHRvbj5cblx0XHQ8L2Zvcm0+XG5cdFx0PHN0eWxlIGpzeD5cblx0XHRcdHtgXG5cdFx0XHRcdC5uZXdzbGV0dGVyIHtcblx0XHRcdFx0XHRmb250LWZhbWlseTogTHVzaXRhbmEsIEdlb3JnaWEsIHNhbnMtc2VyaWY7XG5cdFx0XHRcdFx0bWFyZ2luOiAxZW0gMC41ZW07XG5cdFx0XHRcdFx0cGFkZGluZzogMWVtO1xuXHRcdFx0XHRcdGJvcmRlcjogMXB4IHNvbGlkICNkYmRiZGI7XG5cdFx0XHRcdFx0YmFja2dyb3VuZDogd2hpdGU7XG5cdFx0XHRcdH1cblx0XHRcdFx0Lm5ld3NsZXR0ZXIgZm9ybSB7XG5cdFx0XHRcdFx0cGFkZGluZzogMC4xZW07XG5cdFx0XHRcdFx0ZGlzcGxheTogZmxleDtcblx0XHRcdFx0XHRmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuXHRcdFx0XHRcdGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcblx0XHRcdFx0fVxuXG5cdFx0XHRcdC5uZXdzbGV0dGVyIGZvcm0gaDIge1xuXHRcdFx0XHRcdG1hcmdpbjogMC4xZW07XG5cdFx0XHRcdH1cblxuXHRcdFx0XHQubmV3c2xldHRlciBmb3JtIC5lbWFpbC1pbnB1dCB7XG5cdFx0XHRcdFx0ZGlzcGxheTogZmxleDtcblx0XHRcdFx0XHRmbGV4LWRpcmVjdGlvbjogcm93O1xuXHRcdFx0XHRcdGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cdFx0XHRcdH1cblxuXHRcdFx0XHQuZW1haWwtaW5wdXQgaW5wdXQge1xuXHRcdFx0XHRcdGZsZXgtZ3JvdzogMTtcblx0XHRcdFx0fVxuXHRcdFx0XHRlbWFpbC1pbnB1dCBzdmcge1xuXHRcdFx0XHRcdG1hcmdpbi1yaWdodDogMC4zZW07XG5cdFx0XHRcdH1cblxuXHRcdFx0XHQubmV3c2xldHRlciBmb3JtIGJ1dHRvbiB7XG5cdFx0XHRcdFx0d2lkdGg6IDEwMCU7XG5cdFx0XHRcdFx0YmFja2dyb3VuZDogI2Y1ZGE1NTtcblx0XHRcdFx0XHRjb2xvcjogIzMyMzMzMDtcblx0XHRcdFx0XHR0ZXh0LWFsaWduOiBjZW50ZXI7XG5cdFx0XHRcdFx0cGFkZGluZzogMC41ZW07XG5cdFx0XHRcdFx0Zm9udC1zaXplOiAyMHB4O1xuXHRcdFx0XHRcdGZvbnQtd2VpZ2h0OiBib2xkO1xuXHRcdFx0XHR9XG5cdFx0XHRgfVxuXHRcdDwvc3R5bGU+XG5cdDwvZGl2PlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgTmV3c2xldHRlcjtcbiJdfQ== */\n/*@ sourceURL=components/NewsletterForm/Newsletter.js */"
-		})
-	);
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Newsletter);
-
-/***/ }),
-
-/***/ "./pages/index.js":
+/***/ "./pages/contact.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_link__ = __webpack_require__("next/link");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_link__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_buttercms__ = __webpack_require__("buttercms");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_buttercms___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_buttercms__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Layout_Layout__ = __webpack_require__("./components/Layout/Layout.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_BlogPostsList_PostContainer__ = __webpack_require__("./components/BlogPostsList/PostContainer.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_NewsletterForm_Newsletter__ = __webpack_require__("./components/NewsletterForm/Newsletter.js");
-var _jsxFileName = '/home/Ranacode/Documents/code_playground/blog_javascrupt/pages/index.js';
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Contact_ContactForm__ = __webpack_require__("./components/Contact/ContactForm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout_Layout__ = __webpack_require__("./components/Layout/Layout.js");
+var _jsxFileName = '/home/Ranacode/Documents/code_playground/blog_javascrupt/pages/contact.js';
 
 
 
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-var butter = __WEBPACK_IMPORTED_MODULE_3_buttercms___default()('4a55813e1a9f5d6c1b68bc28f6fd710d9f00e595');
-
-var Index = function (_React$Component) {
-	_inherits(Index, _React$Component);
-
-	function Index() {
-		_classCallCheck(this, Index);
-
-		return _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).apply(this, arguments));
-	}
-
-	_createClass(Index, [{
-		key: 'render',
-		value: function render() {
-			return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-				'div',
-				{
-					className: 'jsx-1279336931',
-					__source: {
-						fileName: _jsxFileName,
-						lineNumber: 22
-					}
-				},
-				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-					__WEBPACK_IMPORTED_MODULE_4__components_Layout_Layout__["a" /* default */],
-					{ htmlTitle: 'Javascrupt - Lleva tus habilidades de Javascript al siguiente nivel', __source: {
-							fileName: _jsxFileName,
-							lineNumber: 23
-						}
-					},
-					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-						'main',
-						{
-							className: 'jsx-1279336931',
-							__source: {
-								fileName: _jsxFileName,
-								lineNumber: 24
-							}
-						},
-						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-							'div',
-							{
-								className: 'jsx-1279336931' + ' ' + 'blog-container',
-								__source: {
-									fileName: _jsxFileName,
-									lineNumber: 25
-								}
-							},
-							__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-								'header',
-								{
-									className: 'jsx-1279336931',
-									__source: {
-										fileName: _jsxFileName,
-										lineNumber: 26
-									}
-								},
-								__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-									'h3',
-									{
-										className: 'jsx-1279336931',
-										__source: {
-											fileName: _jsxFileName,
-											lineNumber: 27
-										}
-									},
-									'\xDAltimos art\xEDculos'
-								)
-							),
-							this.props.posts.map(function (post) {
-								return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_BlogPostsList_PostContainer__["a" /* default */], { key: post.slug, metadata: post, __source: {
-										fileName: _jsxFileName,
-										lineNumber: 30
-									}
-								});
-							})
-						),
-						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-							'section',
-							{
-								className: 'jsx-1279336931',
-								__source: {
-									fileName: _jsxFileName,
-									lineNumber: 33
-								}
-							},
-							__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_NewsletterForm_Newsletter__["a" /* default */], {
-								__source: {
-									fileName: _jsxFileName,
-									lineNumber: 34
-								}
-							})
-						)
-					)
-				),
-				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-					styleId: '1279336931',
-					css: 'body{background:#fafafa;font-family:Raleway,Helvetica,Arial,sans-serif;color:#000;margin:0;padding:0;box-sizing:border-box;}.blog-container{margin:0.7em 1em;}header{background:white;border:1px solid #dbdbdb;border-radius:10px;padding:0.4em;width:100%;font-family:Lusitana,Verdana,sans-serif;width:25%;margin:0.5em;}header h3{margin:0.2em 0;font-size:25px;width:100%;text-align:center;}main{display:grid;grid-template-columns:70% 30%;}@media screen and (max-width:1024px){main{grid-template-columns:100%;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNDdUIsQUFHMEIsQUFTRixBQUdBLEFBV0YsQUFNRixBQU1lLGFBTEUsRUFOZixFQWRoQixBQUcwQixFQVp5QixRQW1DbEQsR0FYVyxXQUNPLENBWkMsQ0FpQnBCLGdCQUpBLEVBWmUsS0FiSCxTQWNBLEVBYkYsU0FDQyxBQWFnQyxVQVpwQixzQkFDdkIsUUFZVyxVQUNHLGFBQ2QiLCJmaWxlIjoicGFnZXMvaW5kZXguanMiLCJzb3VyY2VSb290IjoiL2hvbWUvUmFuYWNvZGUvRG9jdW1lbnRzL2NvZGVfcGxheWdyb3VuZC9ibG9nX2phdmFzY3J1cHQiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xuaW1wb3J0IEJ1dHRlciBmcm9tICdidXR0ZXJjbXMnO1xuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL0xheW91dC9MYXlvdXQnO1xuaW1wb3J0IFBvc3RDb250YWluZXIgZnJvbSAnLi4vY29tcG9uZW50cy9CbG9nUG9zdHNMaXN0L1Bvc3RDb250YWluZXInO1xuaW1wb3J0IE5ld3NsZXR0ZXIgZnJvbSAnLi4vY29tcG9uZW50cy9OZXdzbGV0dGVyRm9ybS9OZXdzbGV0dGVyJztcblxuY29uc3QgYnV0dGVyID0gQnV0dGVyKCc0YTU1ODEzZTFhOWY1ZDZjMWI2OGJjMjhmNmZkNzEwZDlmMDBlNTk1Jyk7XG5cbmNsYXNzIEluZGV4IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcblx0c3RhdGljIGdldEluaXRpYWxQcm9wcyA9ICgpID0+IHtcblx0XHRyZXR1cm4gYnV0dGVyLnBvc3Rcblx0XHRcdC5saXN0KHsgcGFnZTogMSwgcGFnZV9zaXplOiA1IH0pXG5cdFx0XHQudGhlbigocmVzdWx0KSA9PiB7XG5cdFx0XHRcdHJldHVybiB7IHBvc3RzOiByZXN1bHQuZGF0YS5kYXRhIH07XG5cdFx0XHR9KVxuXHRcdFx0LmNhdGNoKChlcnIpID0+IHtcblx0XHRcdFx0Y29uc29sZS5sb2coZXJyKTtcblx0XHRcdH0pO1xuXHR9O1xuXHRyZW5kZXIoKSB7XG5cdFx0cmV0dXJuIChcblx0XHRcdDxkaXY+XG5cdFx0XHRcdDxMYXlvdXQgaHRtbFRpdGxlPVwiSmF2YXNjcnVwdCAtIExsZXZhIHR1cyBoYWJpbGlkYWRlcyBkZSBKYXZhc2NyaXB0IGFsIHNpZ3VpZW50ZSBuaXZlbFwiPlxuXHRcdFx0XHRcdDxtYWluPlxuXHRcdFx0XHRcdFx0PGRpdiBjbGFzc05hbWU9XCJibG9nLWNvbnRhaW5lclwiPlxuXHRcdFx0XHRcdFx0XHQ8aGVhZGVyPlxuXHRcdFx0XHRcdFx0XHRcdDxoMz7Dmmx0aW1vcyBhcnTDrWN1bG9zPC9oMz5cblx0XHRcdFx0XHRcdFx0PC9oZWFkZXI+XG5cdFx0XHRcdFx0XHRcdHt0aGlzLnByb3BzLnBvc3RzLm1hcCgocG9zdCkgPT4ge1xuXHRcdFx0XHRcdFx0XHRcdHJldHVybiA8UG9zdENvbnRhaW5lciBrZXk9e3Bvc3Quc2x1Z30gbWV0YWRhdGE9e3Bvc3R9IC8+O1xuXHRcdFx0XHRcdFx0XHR9KX1cblx0XHRcdFx0XHRcdDwvZGl2PlxuXHRcdFx0XHRcdFx0PHNlY3Rpb24+XG5cdFx0XHRcdFx0XHRcdDxOZXdzbGV0dGVyIC8+XG5cdFx0XHRcdFx0XHQ8L3NlY3Rpb24+XG5cdFx0XHRcdFx0PC9tYWluPlxuXHRcdFx0XHQ8L0xheW91dD5cblxuXHRcdFx0XHQ8c3R5bGUganN4IGdsb2JhbD57YFxuXHRcdFx0XHRcdGJvZHkge1xuXHRcdFx0XHRcdFx0YmFja2dyb3VuZDogI2ZhZmFmYTtcblx0XHRcdFx0XHRcdGZvbnQtZmFtaWx5OiBSYWxld2F5LCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmO1xuXHRcdFx0XHRcdFx0Y29sb3I6ICMwMDA7XG5cdFx0XHRcdFx0XHRtYXJnaW46IDA7XG5cdFx0XHRcdFx0XHRwYWRkaW5nOiAwO1xuXHRcdFx0XHRcdFx0Ym94LXNpemluZzogYm9yZGVyLWJveDtcblx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHQuYmxvZy1jb250YWluZXIge1xuXHRcdFx0XHRcdFx0bWFyZ2luOiAwLjdlbSAxZW07XG5cdFx0XHRcdFx0fVxuXHRcdFx0XHRcdGhlYWRlciB7XG5cdFx0XHRcdFx0XHRiYWNrZ3JvdW5kOiB3aGl0ZTtcblx0XHRcdFx0XHRcdGJvcmRlcjogMXB4IHNvbGlkICNkYmRiZGI7XG5cdFx0XHRcdFx0XHRib3JkZXItcmFkaXVzOiAxMHB4O1xuXHRcdFx0XHRcdFx0cGFkZGluZzogMC40ZW07XG5cdFx0XHRcdFx0XHR3aWR0aDogMTAwJTtcblx0XHRcdFx0XHRcdGZvbnQtZmFtaWx5OiBMdXNpdGFuYSwgVmVyZGFuYSwgc2Fucy1zZXJpZjtcblx0XHRcdFx0XHRcdHdpZHRoOiAyNSU7XG5cdFx0XHRcdFx0XHRtYXJnaW46IDAuNWVtO1xuXHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdGhlYWRlciBoMyB7XG5cdFx0XHRcdFx0XHRtYXJnaW46IDAuMmVtIDA7XG5cdFx0XHRcdFx0XHRmb250LXNpemU6IDI1cHg7XG5cdFx0XHRcdFx0XHR3aWR0aDogMTAwJTtcblx0XHRcdFx0XHRcdHRleHQtYWxpZ246IGNlbnRlcjtcblx0XHRcdFx0XHR9XG5cdFx0XHRcdFx0bWFpbiB7XG5cdFx0XHRcdFx0XHRkaXNwbGF5OiBncmlkO1xuXHRcdFx0XHRcdFx0Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiA3MCUgMzAlO1xuXHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwMjRweCkge1xuXHRcdFx0XHRcdFx0bWFpbiB7XG5cdFx0XHRcdFx0XHRcdGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTAwJTtcblx0XHRcdFx0XHRcdH1cblx0XHRcdFx0XHR9XG5cdFx0XHRcdGB9PC9zdHlsZT5cblx0XHRcdDwvZGl2PlxuXHRcdCk7XG5cdH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7XG4iXX0= */\n/*@ sourceURL=pages/index.js */'
-				})
-			);
-		}
-	}]);
-
-	return Index;
-}(__WEBPACK_IMPORTED_MODULE_1_react___default.a.Component);
-
-Index.getInitialProps = function () {
-	return butter.post.list({ page: 1, page_size: 5 }).then(function (result) {
-		return { posts: result.data.data };
-	}).catch(function (err) {
-		console.log(err);
-	});
+var Contact = function Contact() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		__WEBPACK_IMPORTED_MODULE_2__components_Layout_Layout__["a" /* default */],
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 5
+			}
+		},
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Contact_ContactForm__["a" /* default */], {
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 6
+			}
+		})
+	);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/index.js");
+module.exports = __webpack_require__("./pages/contact.js");
 
-
-/***/ }),
-
-/***/ "buttercms":
-/***/ (function(module, exports) {
-
-module.exports = require("buttercms");
-
-/***/ }),
-
-/***/ "html-react-parser":
-/***/ (function(module, exports) {
-
-module.exports = require("html-react-parser");
 
 /***/ }),
 
@@ -1211,13 +746,6 @@ module.exports = require("next/head");
 /***/ (function(module, exports) {
 
 module.exports = require("next/link");
-
-/***/ }),
-
-/***/ "prop-types":
-/***/ (function(module, exports) {
-
-module.exports = require("prop-types");
 
 /***/ }),
 
@@ -1236,4 +764,4 @@ module.exports = require("styled-jsx/style");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=contact.js.map

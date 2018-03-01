@@ -24,11 +24,6 @@ class Navbar extends React.Component {
 				</div>
 
 				<ul className={`nav-items ${this.state.activeToggle ? 'activeToggle' : ''}`}>
-					<li title="Encuentra los artículos de tu interés">
-						<Link href="/contact">
-							<a>Artículos</a>
-						</Link>
-					</li>
 					<li title="Todo lo relacionado con el Front esta aquí">
 						<Link href="/contact">
 							<a>Front-End</a>

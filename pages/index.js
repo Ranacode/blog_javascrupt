@@ -3,6 +3,7 @@ import Butter from 'buttercms';
 import Layout from '../components/Layout/Layout';
 import PostContainer from '../components/BlogPostsList/PostContainer';
 import Newsletter from '../components/NewsletterForm/Newsletter';
+import TopSearchBar from '../components/TopSearchBar';
 
 const butter = Butter('4a55813e1a9f5d6c1b68bc28f6fd710d9f00e595');
 
@@ -30,7 +31,8 @@ class Index extends React.Component {
 								return <PostContainer key={post.slug} metadata={post} />;
 							})}
 						</div>
-						<section>
+						<section className="aside-column">
+							<TopSearchBar />
 							<Newsletter />
 						</section>
 					</main>
@@ -74,6 +76,17 @@ class Index extends React.Component {
 					@media screen and (max-width: 1024px) {
 						main {
 							grid-template-columns: 100%;
+							
+						}
+						section.aside-column {
+								margin: 1em;
+							}
+						}
+
+						@media screen and (max-width: 677px) {
+							section.aside-column {
+								margin: 1em;
+							}
 						}
 					}
 				`}</style>

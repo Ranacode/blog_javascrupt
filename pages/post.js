@@ -29,11 +29,7 @@ class Post extends React.Component {
 						content={`${this.props.post.author.first_name} ${this.props.post.author.last_name}`}
 					/>
 					<meta name="keywords" content={this.props.post.tags.map((tag) => tag.name).join(', ')} />
-					<link
-						rel="stylesheet"
-						href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css"
-						key="codeStyles"
-					/>
+					<link rel="stylesheet" href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css" />
 					<title>{this.props.post.seo_title}</title>
 				</Head>
 				<header>
